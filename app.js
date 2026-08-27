@@ -144,6 +144,18 @@ async function preparePhoto(file) {
   }
 }
 
+async function resolvePhotoUrl(id) {
+  const jpg = `./photos/${id}.jpg`;
+  try {
+    const res = await fetch(jpg, { cache: "no-store" });
+    const type = (res.headers.get("content-type") || "").toLowerCase();
+    if (res.ok && type.startsWith("image/") && !type.includes("html")) return jpg;
+  } catch {
+    /* jpg yoksa svg'ye düş */
+  }
+  return `./photos/${id}.svg`;
+}
+
 async function applyPhoto(img, id) {
   const blob = await idbGet(id).catch(() => null);
   if (objectUrls.has(id)) URL.revokeObjectURL(objectUrls.get(id));
@@ -157,7 +169,7 @@ async function applyPhoto(img, id) {
     img.src = url;
     return;
   }
-  img.src = `./photos/${id}.jpg`;
+  img.src = await resolvePhotoUrl(id);
 }
 
 async function loadAllPhotos() {

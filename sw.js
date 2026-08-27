@@ -1,4 +1,4 @@
-const CACHE_NAME = "kalp-v20";
+const CACHE_NAME = "kalp-v21";
 const PRECACHE = [
   "./",
   "./index.html",

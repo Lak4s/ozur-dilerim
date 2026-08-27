@@ -144,7 +144,7 @@ body {
 }
 
 .polaroid img[data-fallback="1"] {
-  opacity: 0.55;
+  opacity: 0.85;
 }
 
 .polaroid-1 {
