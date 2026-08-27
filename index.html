@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#1A1717" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Özür Dilerim" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Özür Dilerim</title>
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" href="./icons/icon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20" />
+  </head>
+  <body>
+    <div class="scene" aria-hidden="true">
+      <div class="scene-bg"></div>
+
+      <div class="polaroids" id="polaroids">
+        <figure class="polaroid polaroid-1"><span class="polaroid-photo"><img data-photo="1" alt="" /></span></figure>
+        <figure class="polaroid polaroid-2"><span class="polaroid-photo"><img data-photo="2" alt="" /></span></figure>
+        <figure class="polaroid polaroid-3"><span class="polaroid-photo"><img data-photo="3" alt="" /></span></figure>
+        <figure class="polaroid polaroid-4"><span class="polaroid-photo"><img data-photo="4" alt="" /></span></figure>
+      </div>
+
+      <div class="florals">
+        <svg class="floral floral-topleft" data-sprig="topleft" viewBox="0 0 300 300"></svg>
+        <svg class="floral floral-left" data-sprig="left" viewBox="0 0 300 480"></svg>
+        <svg class="floral floral-right" data-sprig="right" viewBox="0 0 340 300"></svg>
+      </div>
+
+      <div class="scene-vignette"></div>
+
+      <div class="doodles">
+        <svg class="doodle dk-a" viewBox="0 0 34 30"><path class="dk-heart" d="M17 27C6 19 2 13 6 8c3-4 9-3 11 2 2-5 8-6 11-2 4 5 0 11-11 19Z" /></svg>
+        <svg class="doodle dk-b" viewBox="0 0 26 26"><path class="dk-star" d="M13 1.5l2.6 8.9 8.9 2.6-8.9 2.6-2.6 8.9-2.6-8.9L1.5 13l8.9-2.6Z" /></svg>
+        <svg class="doodle dk-c" viewBox="0 0 130 70">
+          <path class="dk-heart dk-thin" d="M11 22C4 17 1 13 4 9c2-3 6-2 7 2 2-4 6-4 8-1 3 4 0 8-8 12Z" />
+          <path class="dk-trail" d="M20 20c22 8 46 4 63-11 11-9 19-19 26-27" />
+          <path class="dk-tick" d="M96 6l7-5M106 12l10-3M101 22l4 9" />
+        </svg>
+        <svg class="doodle dk-d" viewBox="0 0 26 26"><path class="dk-star" d="M13 2l2.4 8.6 8.6 2.4-8.6 2.4L13 24l-2.4-8.6L2 13l8.6-2.4Z" /></svg>
+        <svg class="doodle dk-e" viewBox="0 0 34 30"><path class="dk-heart" d="M17 27C6 19 2 13 6 8c3-4 9-3 11 2 2-5 8-6 11-2 4 5 0 11-11 19Z" /></svg>
+        <svg class="doodle dk-f" viewBox="0 0 34 30"><path class="dk-heart" d="M17 27C6 19 2 13 6 8c3-4 9-3 11 2 2-5 8-6 11-2 4 5 0 11-11 19Z" /></svg>
+        <svg class="doodle dk-g" viewBox="0 0 110 90"><path class="dk-trail" d="M92 4C86 30 70 52 46 66c-12 7-25 13-38 18" /></svg>
+        <svg class="doodle dk-h" viewBox="0 0 26 26"><path class="dk-star" d="M13 3l2.2 7.8 7.8 2.2-7.8 2.2L13 23l-2.2-7.8L3 13l7.8-2.2Z" /></svg>
+        <svg class="doodle dk-i" viewBox="0 0 26 26"><path class="dk-star" d="M13 2.5l2.3 8.2 8.2 2.3-8.2 2.3-2.3 8.2-2.3-8.2L2.5 13l8.2-2.3Z" /></svg>
+      </div>
+
+      <div class="grain"></div>
+    </div>
+    <!-- SETTINGS START -->
+    <button class="settings-btn" id="btn-settings" type="button" aria-label="Ayarlar">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M19.14 12.94a7.6 7.6 0 0 0 .05-.94 7.6 7.6 0 0 0-.05-.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.6-.22l-2.39.96a7.2 7.2 0 0 0-1.62-.94l-.36-2.54a.5.5 0 0 0-.5-.42h-3.84a.5.5 0 0 0-.5.42l-.36 2.54c-.58.23-1.12.54-1.62.94l-2.39-.96a.5.5 0 0 0-.6.22L2.66 8.84a.5.5 0 0 0 .12.64L4.81 11.06a7.6 7.6 0 0 0-.05.94 7.6 7.6 0 0 0 .05.94L2.78 14.52a.5.5 0 0 0-.12.64l1.92 3.32a.5.5 0 0 0 .6.22l2.39-.96c.5.4 1.04.71 1.62.94l.36 2.54a.5.5 0 0 0 .5.42h3.84a.5.5 0 0 0 .5-.42l.36-2.54c.58-.23 1.12-.54 1.62-.94l2.39.96a.5.5 0 0 0 .6-.22l1.92-3.32a.5.5 0 0 0-.12-.64ZM12 15.5A3.5 3.5 0 1 1 12 8.5a3.5 3.5 0 0 1 0 7Z"
+        />
+      </svg>
+    </button>
+    <dialog class="settings-dialog" id="settings-dialog">
+      <form method="dialog" class="settings-panel">
+        <header class="settings-head">
+          <h2>Ayarlar</h2>
+          <button class="icon-btn" value="close" aria-label="Kapat">×</button>
+        </header>
+        <p class="settings-note">
+          Fotoğraf ve not metinleri buradan değişince yalnızca bu tarayıcıda kalır.
+          Sevgilinin de görmesi için <code>photos/</code> klasörüne
+          <code>1.jpg</code>–<code>4.jpg</code> + <code>letter.jpg</code> koy;
+          kalıcı metin için <code>content.js</code> güncellenmeli.
+        </p>
+        <div class="settings-grid" id="settings-photos"></div>
+
+        <div class="settings-section">
+          <h3>Arka plan</h3>
+          <div class="settings-range">
+            <div class="settings-range-head">
+              <label class="settings-letter-label" for="dim-input">Karartma</label>
+              <span id="dim-value">50%</span>
+            </div>
+            <input id="dim-input" type="range" min="0" max="100" step="1" value="50" />
+          </div>
+        </div>
+
+        <div class="settings-section">
+          <h3>Not / mektup metni</h3>
+          <label class="settings-letter-label" for="greeting-input">Selamlama</label>
+          <input id="greeting-input" type="text" maxlength="40" placeholder="Sana," />
+
+          <label class="settings-letter-label" for="letter-input">Mektup metni</label>
+          <textarea id="letter-input" rows="8" placeholder="Mektubu buraya yaz..."></textarea>
+
+          <label class="settings-letter-label" for="sticker-input">Kalp sticker yazısı</label>
+          <input id="sticker-input" type="text" maxlength="40" placeholder="iyi ki varsın <3" />
+        </div>
+
+        <div class="settings-actions">
+          <button type="button" class="btn-reset" id="btn-reset-settings">Sıfırla</button>
+          <button value="close" class="btn-close-settings">Kapat</button>
+        </div>
+      </form>
+    </dialog>
+    <!-- SETTINGS END -->
+
+    <main id="view-home" class="view view-home">
+      <section class="hero">
+        <div class="hero-heart" id="hero-heart" aria-hidden="true">
+          <img src="./assets/heart.png?v=20" alt="" />
+        </div>
+        <h1>Özür Dilerim</h1>
+        <p class="hero-sub">Seni kırdığımın farkındayım... Beni affetmeni çok istiyorum.</p>
+        <div class="actions">
+          <button class="btn btn-yes" id="btn-yes" type="button">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path fill="currentColor" d="M12 21s-7.4-4.6-9.5-8.3C.7 9.7 2.2 6 5.6 6c2 0 3.3 1.1 4.4 2.6C11.1 7.1 12.4 6 14.4 6c3.4 0 4.9 3.7 3.1 6.7C19.4 16.4 12 21 12 21z" />
+            </svg>
+            Affediyorum
+          </button>
+          <span class="no-slot" id="no-slot">
+            <button class="btn btn-no" id="btn-no" type="button">Affetmiyorum</button>
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <main id="view-inbox" class="view view-inbox" hidden>
+      <header class="inbox-bar">
+        <a class="back-link" href="#/" aria-label="Geri">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 5 8 12l7 7" />
+          </svg>
+          <span>Gelen Kutusu</span>
+        </a>
+      </header>
+      <div class="inbox-layout">
+        <aside class="inbox-preview">
+          <article class="preview-card">
+            <p class="preview-from">Gönderen: Furkan</p>
+            <p class="preview-snip">&lt;333</p>
+          </article>
+          <svg class="baby-breath" viewBox="0 0 180 160" aria-hidden="true">
+            <g fill="none" stroke="#d7c4b0" stroke-width="1" opacity="0.55">
+              <path d="M90 160 C 88 110, 40 90, 30 50" />
+              <path d="M90 160 C 92 120, 130 100, 150 60" />
+              <path d="M90 140 C 70 100, 80 70, 60 40" />
+            </g>
+            <g fill="#e8d7c4" opacity="0.7">
+              <circle cx="30" cy="50" r="3" />
+              <circle cx="38" cy="42" r="2.2" />
+              <circle cx="22" cy="44" r="2" />
+              <circle cx="150" cy="60" r="3" />
+              <circle cx="158" cy="52" r="2" />
+              <circle cx="142" cy="50" r="2.2" />
+              <circle cx="60" cy="40" r="2.6" />
+              <circle cx="68" cy="32" r="2" />
+              <circle cx="52" cy="34" r="1.8" />
+              <circle cx="88" cy="70" r="2" />
+              <circle cx="110" cy="88" r="1.8" />
+            </g>
+          </svg>
+        </aside>
+        <section class="letter-stage">
+          <div class="envelope is-closed" id="envelope">
+            <div class="envelope-back" aria-hidden="true"></div>
+            <article class="letter-paper">
+              <p class="letter-greet"><span id="letter-greet">Sana,</span> <span class="inline-heart">♡</span></p>
+              <div class="letter-body" id="letter-body"></div>
+              <div class="heart-sticker" id="heart-sticker">iyi ki varsın &lt;3</div>
+            </article>
+            <div class="envelope-lip" aria-hidden="true"></div>
+            <figure class="letter-polaroid">
+              <span class="polaroid-photo"><img data-photo="letter" alt="Mektup fotoğrafı" /></span>
+            </figure>
+            <div class="envelope-flap" aria-hidden="true"></div>
+            <button class="envelope-open" id="envelope-open" type="button">
+              <span class="envelope-seal" aria-hidden="true">♡</span>
+              <span class="envelope-hint">Zarfı açmak için dokun</span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <button class="mail-toast" id="mail-toast" type="button" hidden>
+      <span class="toast-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22">
+          <path fill="none" stroke="currentColor" stroke-width="1.7" d="M3 7.5 12 13l9-5.5M4 18h16a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1Z" />
+        </svg>
+        <span class="toast-badge">1</span>
+      </span>
+      <span class="toast-copy">
+        <strong>Yeni e-posta geldi!</strong>
+        <small>Kalbinden gelen bir mesaj var &lt;3</small>
+      </span>
+    </button>
+
+    <script src="./content.js?v=20"></script>
+    <script src="./decor.js?v=20"></script>
+    <script src="./app.js?v=20"></script>
+  </body>
+</html>

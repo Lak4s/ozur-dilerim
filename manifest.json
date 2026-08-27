@@ -1,0 +1,37 @@
+{
+  "name": "Özür Dilerim",
+  "short_name": "Özür Dilerim",
+  "description": "Kalbinden gelen bir mesaj",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1A1717",
+  "theme_color": "#1A1717",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
