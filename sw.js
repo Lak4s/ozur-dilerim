@@ -1,4 +1,4 @@
-const CACHE_NAME = "kalp-v21";
+const CACHE_NAME = "kalp-v22";
 const PRECACHE = [
   "./",
   "./index.html",
@@ -10,11 +10,11 @@ const PRECACHE = [
   "./assets/heart.png",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
-  "./photos/1.svg",
-  "./photos/2.svg",
-  "./photos/3.svg",
-  "./photos/4.svg",
-  "./photos/letter.svg",
+  "./photos/1.jpg",
+  "./photos/2.jpg",
+  "./photos/3.jpg",
+  "./photos/4.jpg",
+  "./photos/letter.jpg",
 ];
 
 self.addEventListener("install", (event) => {
